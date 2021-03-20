@@ -1,10 +1,10 @@
 <?php
 namespace api;
 
-define('DB_SERVER', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'mvsk_oop');
+define('DB_SERVER', 'hosting.drite.in.th');
+define('DB_USER', 'iceza');
+define('DB_PASS', 'c$4n8bZ0');
+define('DB_NAME', 'iceza_projectcom64');
 
 class DBCon {
     
