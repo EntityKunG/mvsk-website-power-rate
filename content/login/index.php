@@ -7,6 +7,9 @@ use api\TeacherData;
 
 TemplateHandle::printTitle('เข้าสู่ระบบ');
 TemplateHandle::printTitleTopic('เข้าสู่ระบบ', 'เข้าสู่ระบบเพื่อเริ่มต้นใช้งานเว็บไซต์');
+if (isset($_SESSION["ID"])) {
+    FewPHP::redirectPage("/");
+}
 
 if (isset($_POST["submit"])) {
     $code = $_POST["idStudent"];
@@ -17,9 +20,6 @@ if (isset($_POST["submit"])) {
         $prefix = array("อุ้ย", "ว้าย", "อย่าหาทำ", "แหม่ๆ", "ทำอะไรอ่ะ", "โนๆจ่ะ", "ห๊ะ");
         $_SESSION["Error"] = "<b>".$prefix[array_rand($prefix)]."</b> ไม่พบรหัสครูในฐานข้อมูล กรุณาลองใหม่ในภายภาคหน้า";
     }
-}
-if (isset($_SESSION["ID"])) {
-    FewPHP::redirectPage("/");
 }
 ?>
 <section class="section section-lg pt-0">
