@@ -1,0 +1,22 @@
+{
+	"minimum-stability" : "RC",
+	"name" : "mvsk-teacher/mvsk-teacher",
+	"description" : "Mvsk Website for Teacher and student planform",
+	"license" : "proprietary",
+	"type" : "project",
+	"authors" : [{
+			"name" : "Peeranat Matsor",
+			"email" : "sharpkung4826@gmail.com",
+			"role" : "Admin"
+		}
+	],
+	"support" : {
+		"email" : "few@commvsk.com"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"lib\\" : "lib",
+			"api\\" : "api"
+		}
+	}
+}
