@@ -20,7 +20,7 @@ session_start();
 			</li>
 			<li class="nav-item"><a class="nav-link text-white" href="/dashboard">แผงควบคุม</a>
 			</li>
-			<li class="nav-item"><a class="nav-link text-white" href="#">ช่วยเหลือ</a>
+			<li class="nav-item"><a class="nav-link text-white" href="/help">ช่วยเหลือ</a>
 			</li>
 		</ul>
     <?php

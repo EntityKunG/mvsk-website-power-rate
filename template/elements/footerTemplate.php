@@ -11,7 +11,7 @@ namespace template\elements;
         </p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">ทางลัด</h5>
+        <h5 class="text-uppercase">QUICK MENU</h5>
 
         <ul class="list-unstyled mb-0">
           <li>
@@ -26,7 +26,7 @@ namespace template\elements;
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0">ช่วยเหลือ</h5>
+        <h5 class="text-uppercase mb-0">help</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -34,6 +34,9 @@ namespace template\elements;
           </li>
           <li>
             <a href="/staff" class="text-dark">ติดต่อทีมงานที่เกี่ยวข้อง</a>
+          </li>
+          <li>
+            <a href="/help" class="text-dark">ช่วยเหลือ</a>
           </li>
         </ul>
       </div>
