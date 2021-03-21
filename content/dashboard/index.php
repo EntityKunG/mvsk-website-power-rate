@@ -7,15 +7,14 @@ use api\Subject;
 use lib\FewPHP;
 
 if (!isset($_SESSION["ID"])) {
-    FewPHP::redirectPage("/");
-}
-
-$id = $_SESSION["ID"];
-$teacher = new TeacherData($id);
-$dbcon = new DBCon();
-$subject = new Subject();
-TemplateHandle::printTitle('ยินดีตอนรับ');
-TemplateHandle::printTitleTopic('ยินดีตอนรับ', $teacher->getName()." รบกวนอย่าซนระบบ");
+    FewPHP::redirectPage("/login");
+} else {
+    $id = $_SESSION["ID"];
+    $teacher = new TeacherData($id);
+    $dbcon = new DBCon();
+    $subject = new Subject();
+    TemplateHandle::printTitle('ยินดีตอนรับ');
+    TemplateHandle::printTitleTopic('ยินดีตอนรับ', $teacher->getName()." รบกวนอย่าซนระบบ");
 ?>
 <section class="section section-lg pt-0">
 	<div class="container mt-n8 mt-lg-n12 z-2">
@@ -92,3 +91,6 @@ TemplateHandle::printTitleTopic('ยินดีตอนรับ', $teacher->g
 		</div>
 	</div>
 </section>
+<?php 
+}
+?>
