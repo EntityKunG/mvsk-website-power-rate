@@ -134,7 +134,7 @@ if (isset($_POST["submit"])) {
     							<div class="col-1 col-md-3 mb-3">
     					    		<div class="form-check">
     					    			<?php 
-    										for ($room = 10; $room <= 15; $room ++) {
+    										for ($room = 11; $room <= 15; $room ++) {
     										    $str = "";
     										    if ($room % 2 == 0) {
     										        $str = "even".$ranked;
