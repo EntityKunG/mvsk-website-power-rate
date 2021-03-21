@@ -51,4 +51,9 @@ class TemplateHandle {
         </section>';
     }
     
+    public static function addQuestion($question, $answer) {
+        echo '<br />
+               <span><b>Q: </b>'.$question.' </span>
+               <span><b>A: </b>'.$answer.' </span>';
+    }
 }
