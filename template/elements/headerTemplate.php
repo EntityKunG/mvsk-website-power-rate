@@ -18,8 +18,13 @@ session_start();
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link text-white" href="/">หน้าหลัก</a>
 			</li>
+			<?php 
+			if (isset($_SESSION["ID"])) {
+			  echo '
 			<li class="nav-item"><a class="nav-link text-white" href="/dashboard">แผงควบคุม</a>
-			</li>
+			</li>';  
+			} 
+			?>
 			<li class="nav-item"><a class="nav-link text-white" href="/help">ช่วยเหลือ</a>
 			</li>
 		</ul>
