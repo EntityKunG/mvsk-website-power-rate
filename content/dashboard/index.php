@@ -33,8 +33,8 @@ TemplateHandle::printTitleTopic('ยินดีตอนรับ', $teacher->g
                     <p class="note note-info">
                       <strong>Note :</strong> ตอนนี้กำลังปรับแก้ไขอยู่ รบกวนอย่าซนทำระบบพังนะ ขี้เกียจแก้แล้ว (= _ =;)
                     </p>
-                    <table class="table">
-                      <thead class="table-dark">
+                    <table class="table-responsive">
+                      <thead class="table-dark text-center">
                       	<tr>
                           	<th width="5%">ลำดับ</th>
             				<th width="13%">รายชื่อวิชา</th>
